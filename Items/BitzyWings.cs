@@ -26,27 +26,28 @@ namespace Bitzy.Items
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) {
-			player.wingTimeMax = 3;
+			player.wingTimeMax = 20;
 		}
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
 			ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend) {
-			ascentWhenFalling = 30f;
-			ascentWhenRising = .1f;
-			maxCanAscendMultiplier = .1f;
-			maxAscentMultiplier = .1f;
-			constantAscend = .1f;
+			ascentWhenFalling = 15f;
+			ascentWhenRising = .5f;
+			maxCanAscendMultiplier = .5f;
+			maxAscentMultiplier = .5f;
+			constantAscend = .5f;
 		}
 
 		public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration) {
 			speed = 5f;
-			acceleration *= 2f;
+			acceleration *= 2.5f;
 		}
 
-		public override void AddRecipes() {
+		public override void AddRecipes()
+		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemType<EquipMaterial>(), 15);
-			recipe.AddTile(TileID.Solidifier);
+			recipe.AddIngredient(ItemType<BitzySoul>(), 80);
+			recipe.AddTile(TileID.Furnaces);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

@@ -19,7 +19,7 @@ namespace Bitzy.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = 3;
-			item.defense = 30;
+			item.defense = 6;
 		}
 
 		public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -44,12 +44,14 @@ namespace Bitzy.Items.Armor
 			player.allDamage += 0.05f;
 			player.maxMinions += 1;
 		}
-		//public override void AddRecipes() {
-		//ModRecipe recipe = new ModRecipe(mod);
-		//recipe.AddIngredient(ItemType<EquipMaterial>(), 30);
-		//recipe.AddTile(TileType<ExampleWorkbench>());
-		//recipe.SetResult(this);
-		//recipe.AddRecipe();
-		//}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemType<BitzySoul>(), 30);
+			recipe.AddTile(TileID.Furnaces);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+		}
 	}
 }

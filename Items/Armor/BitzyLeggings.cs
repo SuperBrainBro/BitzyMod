@@ -17,7 +17,7 @@ namespace Bitzy.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = 3;
-			item.defense = 45;
+			item.defense = 6;
 		}
 
 		public override void UpdateEquip(Player player) {
@@ -25,12 +25,13 @@ namespace Bitzy.Items.Armor
 			player.moveSpeed += 0.15f;
 		}
 
-		//public override void AddRecipes() {
-			//ModRecipe recipe = new ModRecipe(mod);
-			//recipe.AddIngredient(ItemType<EquipMaterial>(), 45);
-			//recipe.AddTile(TileType<ExampleWorkbench>());
-			//recipe.SetResult(this);
-			//recipe.AddRecipe();
-		//}
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemType<BitzySoul>(), 40);
+			recipe.AddTile(TileID.Furnaces);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+		}
 	}
 }
