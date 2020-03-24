@@ -21,23 +21,8 @@ namespace Bitzy.Items
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Gel, 5);
-			recipe.AddIngredient(ItemID.SilverCoin, 25);
 			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this, 2);
-			recipe.AddRecipe();
-
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 20);
-			recipe.AddIngredient(ItemID.GoldCoin, 1);
-			recipe.AddTile(TileID.Solidifier);
-			recipe.SetResult(this, 8);
-			recipe.AddRecipe();
-
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 2000);
-			recipe.AddIngredient(ItemID.PlatinumCoin, 1);
-			recipe.AddTile(TileID.Solidifier);
-			recipe.SetResult(this, 800);
 			recipe.AddRecipe();
 		}
 

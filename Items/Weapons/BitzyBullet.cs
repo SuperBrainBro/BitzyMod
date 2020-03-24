@@ -44,7 +44,7 @@ namespace Bitzy.Items.Weapons
 		}
 
 		public override int ConsumeItem(int type, int numRequired) {
-			if (type == ItemID.Ectoplasm && Main.LocalPlayer.adjTile[TileID.Furnaces]) {
+			if (type == ItemType<BitzySoul>() && Main.LocalPlayer.adjTile[TileID.Furnaces]) {
 				Main.PlaySound(2, -1, -1, mod.GetSoundSlot(SoundType.Item, "Sounds/Item/Bullet"));
 				return Main.rand.NextBool() ? 0 : 1; //You have half chance to not consume your materials
 			}

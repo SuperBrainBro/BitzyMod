@@ -22,19 +22,19 @@ namespace Bitzy.Projectiles
 			projectile.height = 8;
 			projectile.alpha = 255;
 			projectile.friendly = true;
-			projectile.tileCollide = true;
+			projectile.tileCollide = false;
 			projectile.ignoreWater = true;
 			projectile.ranged = true;
 		}
 
 		public override void AI()
 		{
-			if (projectile.alpha > 0)
+			if (projectile.alpha > 70)
 			{
-				projectile.alpha += 15;
-				if (projectile.alpha < 255)
+				projectile.alpha -= 15;
+				if (projectile.alpha < 70)
 				{
-					projectile.alpha = 255;
+					projectile.alpha = 70;
 				}
 			}
 			if (projectile.localAI[0] == 0f)
@@ -62,7 +62,7 @@ namespace Bitzy.Projectiles
 			if (target)
 			{
 				AdjustMagnitude(ref move);
-				projectile.velocity = (10 * projectile.velocity + move) / 11f;
+				projectile.velocity = (15 * projectile.velocity + move) / 4f;
 				AdjustMagnitude(ref projectile.velocity);
 			}
 			if (projectile.alpha <= 100)

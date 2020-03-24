@@ -4,9 +4,17 @@ The Itch Site for Bitzy (The Original Game): https://vincentjenei.itch.io/bitzy
 
 Github Repo: https://github.com/SuperBrainBro/BitzyMod
 
-Mod By: Vincent Jenei
+Mod By:
+Vincent Jenei (Lite#4211)
 
 ChangeLog:
+v0.5:
+Reworked the Bitzy Gun, it now has simular stats to the phoenix blaster, although it shoots slower and its bullets home in on enemies.
+Removed the need for money when crafting Bitzy Souls, as it was very unintuitive.
+Added the Bitzy Missile - A magic weapon simular to the magic missile in how it shoots missiles which follow the mouse. This weapon is crafted with Bitzy souls, iron bars, and a single diamond. This weapon has simular base stats to the flamelash, although it recieves buffs at night and nerfs at day. It also has a higher light radius, which means it can be a great on-the-go light source. It also has a very high mana cost, at 20 mana per use.
+A massive bug making the Bitzy Gun unusable has now been fixed.
+Fixed a texture bug with the Bitzy Gun.
+The Bitzy Gun is mostly finalized at this point, but may recieve changes as needed.
 
 v0.4:
 Added the Bitzy Gun - A ranged weapon which shoots Bitzy Bullets. These bullets home in on enemies, simular to chlorophyte bullets.
@@ -14,13 +22,9 @@ The Bitzy Gun is stil a WIP weapon, and will recieve many changes in the future.
 
 v0.3:
 Added Bitzy Souls, which are used to craft the Bitzy Armor. These are obtainable post King-Slime.
-
 Added a sprite for Bitzy Soul.
-
 The armor and wings are craftable with Bitzy Souls.
-
 Buffed Wings a bit, but are still really bad considering they are pre-hardmode.
-
 Armor now has simular stats to crimson armor, with a few benefits.
 
 v0.2:
