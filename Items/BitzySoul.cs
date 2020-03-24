@@ -20,7 +20,7 @@ namespace Bitzy.Items
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 5);
+			recipe.AddIngredient(ItemID.Gel, 10);
 			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this, 2);
 			recipe.AddRecipe();

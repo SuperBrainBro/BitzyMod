@@ -17,7 +17,7 @@ namespace Bitzy.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = 3;
-			item.defense = 6;
+			item.defense = 5;
 		}
 
 		public override void UpdateEquip(Player player) {

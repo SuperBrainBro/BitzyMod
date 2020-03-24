@@ -13,7 +13,7 @@ namespace Bitzy.Items.Weapons
 		}
 
 		public override void SetDefaults() {
-			item.damage = 54;
+			item.damage = 50;
 			item.magic = true;
 			item.mana = 20;
 			item.width = 26;

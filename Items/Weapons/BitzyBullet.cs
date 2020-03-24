@@ -8,11 +8,11 @@ namespace Bitzy.Items.Weapons
 	public class BitzyBullet : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("Ammo compatible with the Bitzy Gun.");
+			Tooltip.SetDefault("Ammo compatible with the Bitzy Gun");
 		}
 
 		public override void SetDefaults() {
-			item.damage = 4;
+			item.damage = 6;
 			item.ranged = true;
 			item.width = 14;
 			item.height = 14;

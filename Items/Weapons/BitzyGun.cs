@@ -15,7 +15,7 @@ namespace Bitzy.Items.Weapons
 
 		public override void SetDefaults()
 		{
-			item.damage = 32;
+			item.damage = 35;
 			item.crit = 9;
 			item.ranged = true;
 			item.width = 42;
@@ -45,8 +45,8 @@ namespace Bitzy.Items.Weapons
 
 			recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 40);
-			recipe.AddIngredient(TileID.Furnaces, 15);
-			recipe.AddTile(TileID.Anvils);
+			recipe.AddIngredient(ItemID.LeadBar, 15);
+			recipe.AddTile(TileID.Furnaces);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

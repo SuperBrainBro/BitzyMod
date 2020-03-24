@@ -10,7 +10,7 @@ namespace Bitzy.Items.Armor
 	{
 		public override void SetStaticDefaults() {
 			base.SetStaticDefaults();
-			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'Bleeding']\n[c/FFFFFF:+20 max mana]\n[c/FFFFFF:+1 max minions]");
+			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'Bleeding']\n[c/FFFFFF:+1 max minions]");
 		}
 
 		public override void SetDefaults() {
@@ -18,12 +18,11 @@ namespace Bitzy.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = 3;
-			item.defense = 7;
+			item.defense = 6;
 		}
 
 		public override void UpdateEquip(Player player) {
 			player.buffImmune[BuffID.Bleeding] = true;
-			player.statManaMax2 += 20;
 			player.maxMinions += 1;
 		}
 

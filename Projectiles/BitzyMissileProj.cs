@@ -128,10 +128,10 @@ namespace Bitzy.Projectiles
 
 			Main.PlaySound(SoundID.Item10, projectile.position);
 			for (int i = 0; i < 10; i++) {
-				Dust dust = Dust.NewDustDirect(projectile.position - projectile.velocity, projectile.width, projectile.height, DustType<BitzyDust>(), 0, 0, 100, Color.Lime, 0.8f);
+				Dust dust = Dust.NewDustDirect(projectile.position - projectile.velocity, projectile.width, projectile.height, DustType<BitzyDust>(), 0, 0, 100, Color.White, 0.8f);
 				dust.noGravity = true;
 				dust.velocity *= 2f;
-				dust = Dust.NewDustDirect(projectile.position - projectile.velocity, projectile.width, projectile.height, DustType<BitzyDust>(), 0f, 0f, 100, Color.Lime, 0.5f);
+				dust = Dust.NewDustDirect(projectile.position - projectile.velocity, projectile.width, projectile.height, DustType<BitzyDust>(), 0f, 0f, 100, Color.White, 0.5f);
 			}
 		}
 	}
