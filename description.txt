@@ -8,6 +8,15 @@ Mod By:
 Vincent Jenei (Lite#4211)
 
 ChangeLog:
+v0.6:
+Added basic Bitzy tools - Bitzy Hamaxe & Bitzy Pickaxe
+Added Bitzy Sword, a long sword with high damage and slow use time.
+Lots of bug fixes.
+Added particles for many weapons.
+Added Bitzy Hook, a hook with stats simular to the Emerald hook, but you can have two at a time.
+Nerfed the Bitzy Armor and Bitzy Missile, because they were very powerful. (The Bitzy Missile is still really good at night though.)
+Lots of other minor improvements to all items.
+
 v0.5:
 Reworked the Bitzy Gun, it now has simular stats to the phoenix blaster, although it shoots slower and its bullets home in on enemies.
 Removed the need for money when crafting Bitzy Souls, as it was very unintuitive.
