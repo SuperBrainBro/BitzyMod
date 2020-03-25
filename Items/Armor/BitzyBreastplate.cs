@@ -30,7 +30,7 @@ namespace Bitzy.Items.Armor
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 50);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

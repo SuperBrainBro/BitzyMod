@@ -32,7 +32,7 @@ namespace Bitzy.Items.Tools
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 40);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

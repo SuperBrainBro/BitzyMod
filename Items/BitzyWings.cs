@@ -10,14 +10,13 @@ namespace Bitzy.Items
 	[AutoloadEquip(EquipType.Wings)]
 	public class BitzyWings : ModItem
 	{
-		public int isCurFlying;
 		//public override bool Autoload(ref string name)
 		//{
 		//return !GetInstance<ExampleConfigServer>().DisableExampleWings;
 		//}
 
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault($"[c/FFFFFF:Allows slow fall]\n[c/FFFFFF:Negates fall damage]\n[c/FFFFFF:Increased weapon speed while flying]");
+			Tooltip.SetDefault($"[c/FFFFFF:Allows slow fall]\n[c/FFFFFF:Negates fall damage]");
 		}
 
 		public override void SetDefaults() {
@@ -51,30 +50,15 @@ namespace Bitzy.Items
             if (inUse)
             {
                 Dust dust = Dust.NewDustDirect(player.position - player.velocity, player.width, player.height, DustType<BitzyDust>());
-				isCurFlying = 1;
-				player.meleeSpeed -= player.meleeSpeed/2;
-				
-			} else
-            {
-				isCurFlying = 0;
 			}
 			return false;
 		}
-		//public override float UseTimeMultiplier(Player player)
-		//{
-			//if (isCurFlying == 1)
-			//{
-				//return 20f;
-			//} else if (isCurFlying == 0)
-			//{
-				//return 1f;
-			//}
-		//}
+
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 80);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

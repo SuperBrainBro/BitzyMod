@@ -37,6 +37,16 @@ namespace Bitzy.Items.Tools
 			item.shootSpeed = 18f; // how quickly the hook is shot.
 			item.shoot = ProjectileType<BitzyHookProjectile>();
 		}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemType<BitzySoul>(), 15);
+			recipe.AddIngredient(ItemID.GrapplingHook, 1);
+			recipe.AddTile(TileID.Solidifier);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+		}
 	}
 
 	internal class BitzyHookProjectile : ModProjectile

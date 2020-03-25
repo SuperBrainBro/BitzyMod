@@ -40,14 +40,14 @@ namespace Bitzy.Items.Weapons
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 35);
 			recipe.AddIngredient(ItemID.IronBar, 20);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 
 			recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 35);
 			recipe.AddIngredient(ItemID.LeadBar, 20);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

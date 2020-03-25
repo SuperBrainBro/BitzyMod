@@ -28,7 +28,7 @@ namespace Bitzy.Items.Weapons
 		public override void AddRecipes() {
 			WispRecipe recipe = new WispRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 1);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this, 4);
 			recipe.AddRecipe();
 		}

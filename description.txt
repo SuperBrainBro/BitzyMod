@@ -8,6 +8,12 @@ Mod By:
 Vincent Jenei (Lite#4211)
 
 ChangeLog:
+v0.7:
+Rewrote all the item recipes, as they were inconsistent. (Now all weapons, armor, and tools are crafted at the solidifier, meaning they are post king-slime)
+Bitzy souls now drop from all pre-hardmode slimes, including the ones spawned by King Slime.
+Since one of the goals of this mod was quality over quantity, I didnt add too much in this update, but instead made minor improvements to all existing items.
+In order to make sure the pre-hardmode gear was as ballanced as I wanted it, I was able to defeat skeletron, eye of cthulu, and wall of flesh using the Bitzy armor set. As well as the Bitzy gun and Bitzy Missile.
+
 v0.6:
 Added basic Bitzy tools - Bitzy Hamaxe & Bitzy Pickaxe
 Added Bitzy Sword, a long sword with high damage and slow use time.
