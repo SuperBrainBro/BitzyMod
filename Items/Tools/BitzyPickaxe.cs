@@ -10,7 +10,7 @@ namespace Bitzy.Items.Tools
 	public class BitzyPickaxe : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("This is a modded pickaxe.");
+			Tooltip.SetDefault("Can mine Hellstone");
 		}
 
 		public override void SetDefaults() {
@@ -20,7 +20,7 @@ namespace Bitzy.Items.Tools
 			item.height = 40;
 			item.useTime = 20;
 			item.useAnimation = 20;
-			item.pick = 100;
+			item.pick = 60;
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
