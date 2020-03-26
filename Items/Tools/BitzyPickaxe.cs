@@ -20,7 +20,7 @@ namespace Bitzy.Items.Tools
 			item.height = 40;
 			item.useTime = 20;
 			item.useAnimation = 20;
-			item.pick = 60;
+			item.pick = 65;
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
