@@ -8,6 +8,11 @@ Mod By:
 Vincent Jenei (Lite#4211)
 
 ChangeLog:
+v0.7.1
+Fixed a few bugs.
+Nerfed a few items.
+Changed description of a few items.
+
 v0.7:
 Rewrote all the item recipes, as they were inconsistent. (Now all weapons, armor, and tools are crafted at the solidifier, meaning they are post king-slime)
 Bitzy souls now drop from all pre-hardmode slimes, including the ones spawned by King Slime.
