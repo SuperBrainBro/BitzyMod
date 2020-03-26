@@ -10,6 +10,7 @@ namespace Bitzy.Items.Weapons
 	{
 		public override void SetStaticDefaults()
 		{
+			DisplayName.SetDefault("Bitzy Blaster");
 			Tooltip.SetDefault("Uses Bitzy Bullets as ammo");
 		}
 
