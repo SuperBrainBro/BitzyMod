@@ -1,12 +1,12 @@
 Bitzy adds basic pre-hardmode gear based off of a game I made called... Bitzy. Bosses, Armor, Wings, Tools, and Weapons, are added into the game with this mod.
 
 This mod (so far) adds:
-	- 1 Boss
-	- 13 Items
-	- 3 Weapons
-	- 1 Armor Set
-	- 3 Tools
-	- 1 Wing
+	 1 Boss
+	 13 Items
+	 3 Weapons
+	 1 Armor Set
+	 3 Tools
+	 1 Wing
 
 The Itch Site for Bitzy (The Original Game): https://vincentjenei.itch.io/bitzy
 
@@ -23,12 +23,12 @@ Changed description of a few items.
 
 v0.8
 New Boss - Bitzy (Who would have guessed? XD)
-	- Acts simular to King Slime, but with double the defence.
-	- Spawns ~100 blocks above the player.
-	- Can't teleport.
-	- Drops 25 - 45 Bitzy Souls.
+	 Acts simular to King Slime, but with double the defence.
+	 Spawns ~100 blocks above the player.
+	 Can't teleport.
+	 Drops 25 - 45 Bitzy Souls.
 Summon item for Bitzy
-	- Named Bitzy Beacon
+	 Named Bitzy Beacon
 Many more changes to items, in order to keep the game more balanced.
 I am going to focus a bit more on the wiki, but would love if anyone can help out. Speaking of which, message me on Discord Lite#4211 if you have ideas or can help in anyway.
 Thanks for 1000+ downloads!
