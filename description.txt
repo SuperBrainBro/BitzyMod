@@ -16,12 +16,11 @@ Mod By:
 Vincent Jenei (Lite#4211)
 
 ChangeLog:
-v0.7.1
-Fixed a few bugs.
-Nerfed a few items.
-Changed description of a few items.
+v0.9:
+Bitzy now fires projectiles and moves way faster when under 75% health.
 
-v0.8
+
+v0.8:
 New Boss - Bitzy (Who would have guessed? XD)
 	 Acts simular to King Slime, but with double the defence.
 	 Spawns ~100 blocks above the player.
@@ -32,6 +31,11 @@ Summon item for Bitzy
 Many more changes to items, in order to keep the game more balanced.
 I am going to focus a bit more on the wiki, but would love if anyone can help out. Speaking of which, message me on Discord Lite#4211 if you have ideas or can help in anyway.
 Thanks for 1000+ downloads!
+
+v0.7.1:
+Fixed a few bugs.
+Nerfed a few items.
+Changed description of a few items.
 
 v0.7:
 Rewrote all the item recipes, as they were inconsistent. (Now all weapons, armor, and tools are crafted at the solidifier, meaning they are post king-slime)

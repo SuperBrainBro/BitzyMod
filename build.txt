@@ -1,4 +1,4 @@
 displayName = Bitzy Mod
 author = Vincent Jenei
-version = 0.8.1
+version = 0.9
 homepage = https://bitzy-mod-terraria.fandom.com/wiki/Bitzy_Mod_Terraria
