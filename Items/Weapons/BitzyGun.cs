@@ -16,8 +16,8 @@ namespace Bitzy.Items.Weapons
 
 		public override void SetDefaults()
 		{
-			item.damage = 35;
-			item.crit = 9;
+			item.damage = 41;
+			item.crit = 10;
 			item.ranged = true;
 			item.width = 42;
 			item.height = 30;
