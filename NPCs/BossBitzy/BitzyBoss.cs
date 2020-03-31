@@ -37,8 +37,8 @@ namespace Bitzy.NPCs.BossBitzy
 			npc.npcSlots = 15f;
 			npc.boss = true;
 			npc.lavaImmune = false;
-			npc.HitSound = SoundID.NPCHit1;
-			npc.DeathSound = SoundID.NPCDeath2;
+			npc.HitSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BossHit");
+			npc.DeathSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/BossDeath");
 			music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/BossFight");
 		}
 
