@@ -1,5 +1,6 @@
 using Bitzy.Dusts;
 using Bitzy.Items;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -12,8 +13,6 @@ using static Terraria.ModLoader.ModContent;
 
 namespace Bitzy.NPCs.BossBitzy
 {
-	//ported from my tAPI mod because I'm lazy
-	// Abomination is a multi-stage boss.
 	[AutoloadBossHead]
 	public class BitzyBoss : ModNPC
 	{
@@ -34,19 +33,19 @@ namespace Bitzy.NPCs.BossBitzy
 			npc.knockBackResist = 0.1f;
 			npc.width = 96;
 			npc.height = 84;
-			npc.value = Item.buyPrice(0, 1, 0, 0);
+			npc.value = Item.buyPrice(0, 1, 50, 0);
 			npc.npcSlots = 15f;
 			npc.boss = true;
-			npc.lavaImmune = true;
+			npc.lavaImmune = false;
 			npc.HitSound = SoundID.NPCHit1;
-			npc.DeathSound = SoundID.NPCDeath1;
-			music = MusicID.Boss1;
+			npc.DeathSound = SoundID.NPCDeath2;
+			music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/BossFight");
 		}
 
 
 		public override void BossLoot(ref string name, ref int potionType)
 		{
-			potionType = ItemID.HealingPotion;
+			potionType = ItemID.LesserHealingPotion;
 			rndAmount69 = RandomNumber(25, 45);
 			Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<BitzySoul>(), rndAmount69);
 		}
@@ -65,6 +64,7 @@ namespace Bitzy.NPCs.BossBitzy
 
 		public override void HitEffect(int hitDirection, double damage)
 		{
+			Dust.NewDust(npc.position, npc.width + (npc.width / 2), npc.height + (npc.height / 2), DustType<BitzyDust>());
 			Dust.NewDust(npc.position, npc.width + (npc.width / 2), npc.height + (npc.height / 2), DustType<BitzyDust>());
 		}
 
@@ -102,9 +102,9 @@ namespace Bitzy.NPCs.BossBitzy
 					//Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), type, damage, 0f, 0);
 					//npc.ai[2] = 0;
 				//}
-				if (npc.ai[3] >= 25 + (npc.life / 800))
+				if (npc.ai[3] >= 32 + (npc.life / 800))
 				{
-					float Speed = 8f;
+					float Speed = 10f;
 					Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
 					int damage = 10;
 					int type = ProjectileType<BossBitzyBulletProj>(); //Original is 129

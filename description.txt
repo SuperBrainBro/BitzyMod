@@ -17,8 +17,10 @@ Vincent Jenei (Lite#4211)
 
 ChangeLog:
 v0.9:
-Bitzy now fires projectiles and moves way faster when under 75% health.
-
+Bitzy now has multiple phases.
+	He enters phase 2 when under 75% health:
+		Bitzy shoots projectiles.
+		Bitzy moves much faster.
 
 v0.8:
 New Boss - Bitzy (Who would have guessed? XD)

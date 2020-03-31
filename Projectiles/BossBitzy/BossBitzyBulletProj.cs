@@ -18,8 +18,8 @@ namespace Bitzy.Projectiles.BossBitzy
 
 		public override void SetDefaults()
 		{
-			projectile.width = 8;
-			projectile.height = 8;
+			projectile.width = 32;
+			projectile.height = 32;
 			projectile.alpha = 255;
 			projectile.friendly = false;
 			projectile.hostile = true;
