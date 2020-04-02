@@ -24,8 +24,8 @@ namespace Bitzy.Items.Weapons
 			item.noMelee = true;
 			item.channel = true; //Channel so that you can held the weapon [Important]
 			item.knockBack = 8;
-			item.value = Item.sellPrice(silver : 50);
-			item.rare = 3;
+			item.value = 6775;
+			item.rare = 2;
 			item.UseSound = SoundID.Item9;
 			item.shoot = ProjectileType<Projectiles.BitzyMissileProj>();
 			item.shootSpeed = 10f;

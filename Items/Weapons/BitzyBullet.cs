@@ -19,8 +19,8 @@ namespace Bitzy.Items.Weapons
 			item.maxStack = 999;
 			item.consumable = true;
 			item.knockBack = 1f;
-			item.value = Item.sellPrice(0, 0, 1, 0);
-			item.rare = 3;
+			item.value = 1;
+			item.rare = 2;
 			item.shoot = ProjectileType<Projectiles.BitzyBulletProj>();
 			item.ammo = item.type; // The first item in an ammo class sets the AmmoID to it's type
 		}

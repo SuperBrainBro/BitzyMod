@@ -12,6 +12,7 @@ namespace Bitzy.Items.Tools
 		public override void SetStaticDefaults() {
 			DisplayName.SetDefault("Bitzy Hook");
 			Tooltip.SetDefault("Can throw out 2 hooks");
+			
 		}
 
 		public override void SetDefaults() {
@@ -36,6 +37,8 @@ namespace Bitzy.Items.Tools
 			item.CloneDefaults(ItemID.EmeraldHook);
 			item.shootSpeed = 18f; // how quickly the hook is shot.
 			item.shoot = ProjectileType<BitzyHookProjectile>();
+			item.value = 475;
+			item.rare = 2;
 		}
 
 		public override void AddRecipes()

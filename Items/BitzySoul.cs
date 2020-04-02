@@ -17,11 +17,12 @@ namespace Bitzy.Items
 		public override void SetDefaults()
 		{
 			item.maxStack = 999;
+			item.value = 5;
 		}
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 4);
+			recipe.AddIngredient(ItemID.Gel, 5);
 			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this, 2);
 			recipe.AddRecipe();

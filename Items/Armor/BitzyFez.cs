@@ -6,11 +6,11 @@ using static Terraria.ModLoader.ModContent;
 namespace Bitzy.Items.Armor
 {
 	[AutoloadEquip(EquipType.Head)]
-	public class BitzyHelmet : ModItem
+	public class BitzyFez : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'On Fire!']\n[c/FFFFFF:+4% damage]");
+			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'On Fire!']\n[c/FFFFFF:+1 minion slot]");
 		}
 		public override void SetDefaults()
 		{
@@ -18,7 +18,7 @@ namespace Bitzy.Items.Armor
 			item.height = 18;
 			item.value = 150;
 			item.rare = 2;
-			item.defense = 5;
+			item.defense = 4;
 		}
 
 		public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -28,18 +28,15 @@ namespace Bitzy.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = $"[c/FFFFFF: +2 life regen] [c/FFFFFF:+5% critical strike chance]";
+			player.setBonus = $"[c/FFFFFF: +2 life regen] [c/FFFFFF:+2 minion slots]";
+			player.maxMinions += 2;
 			player.lifeRegen += 2;
-			player.magicCrit += 5;
-			player.meleeCrit += 5;
-			player.rangedCrit += 5;
-			player.thrownCrit += 5;
 		}
 		
 		public override void UpdateEquip(Player player)
         {
 			player.buffImmune[BuffID.OnFire] = true;
-			player.allDamageMult += 0.04f;
+			player.maxMinions += 1;
 		}
 
 		public override void AddRecipes()

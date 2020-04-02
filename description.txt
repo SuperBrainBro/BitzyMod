@@ -1,12 +1,16 @@
 Bitzy adds basic pre-hardmode gear based off of a game I made called... Bitzy. Bosses, Armor, Wings, Tools, and Weapons, are added into the game with this mod.
 
+The main focus of this mod, is Quality over Quantity, meaning I would rather spend a day tweaking an exsisting item, rather than just addding more.
+
 This mod (so far) adds:
 	 1 Boss
-	 13 Items
+	 16 Items
 	 3 Weapons
-	 1 Armor Set
-	 3 Tools
+	 1 Armor Set w/ 2 Helmet Types
+	 2 Tools
 	 1 Wing
+	 1 Consumable
+	 1 Hook
 
 The Itch Site for Bitzy (The Original Game): https://vincentjenei.itch.io/bitzy
 
@@ -16,6 +20,13 @@ Mod By:
 Vincent Jenei (Lite#4211)
 
 ChangeLog:
+v0.10:
+Added Bitzy Hearts. Bitzy Hearts are similar to life crytals. Bitzy Hearts give the player 2 health each, and up to 20 can be consumed.
+Added Bitzy Fez, a summon variant of the Bitzy Armor.
+Nerfed Bitzy Armor a lot.
+Changed rarity of all Bitzy items to blue (previously orange).
+Fixed the sell price of many items.
+
 v0.9.5
 Bitzy boss now has custom music and sound effects.
 Fixed a few bugs with the Bitzy boss AI.

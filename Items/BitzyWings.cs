@@ -22,8 +22,8 @@ namespace Bitzy.Items
 		public override void SetDefaults() {
 			item.width = 22;
 			item.height = 20;
-			item.value = 100;
-			item.rare = 3;
+			item.value = 400;
+			item.rare = 2;
 			item.accessory = true;
 		}
 

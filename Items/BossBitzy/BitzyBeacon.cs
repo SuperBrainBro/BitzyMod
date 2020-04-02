@@ -25,6 +25,7 @@ namespace Bitzy.Items.BossBitzy
 			item.useStyle = 4;
 			item.UseSound = SoundID.Item44;
 			item.consumable = true;
+			item.value = 500;
 		}
 
 		// We use the CanUseItem hook to prevent a player from using this item while the boss is present in the world.

@@ -10,20 +10,19 @@ namespace Bitzy.Items.Armor
 	{
 		public override void SetStaticDefaults() {
 			base.SetStaticDefaults();
-			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'Bleeding']\n[c/FFFFFF:+1 max minions]");
+			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'Bleeding']");
 		}
 
 		public override void SetDefaults() {
 			item.width = 18;
 			item.height = 18;
-			item.value = 10000;
-			item.rare = 3;
+			item.value = 250;
+			item.rare = 2;
 			item.defense = 6;
 		}
 
 		public override void UpdateEquip(Player player) {
 			player.buffImmune[BuffID.Bleeding] = true;
-			player.maxMinions += 1;
 		}
 
 		public override void AddRecipes()

@@ -26,8 +26,8 @@ namespace Bitzy.Items.Weapons
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 2f;
-			item.value = Item.sellPrice(0, 10, 0, 0);
-			item.rare = 3;
+			item.value = 4700;
+			item.rare = 2;
 			item.UseSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Item/Bullet");
 			item.autoReuse = true;
 			item.shoot = ProjectileType<Projectiles.BitzyBulletProj>();

@@ -23,8 +23,8 @@ namespace Bitzy.Items.Tools
 			item.hammer = 70;      //How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;
-			item.value = 10000;
-			item.rare = 3;
+			item.value = 175;
+			item.rare = 2;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}

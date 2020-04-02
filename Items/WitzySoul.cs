@@ -17,24 +17,16 @@ namespace Bitzy.Items
 		public override void SetDefaults()
 		{
 			item.maxStack = 999;
+			item.value = 25;
 		}
 
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemType<BitzySoul>(), 5);
+			recipe.AddIngredient(ItemType<BitzySoul>(), 10);
 			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this, 1);
 			recipe.AddRecipe();
 		}
-
-		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
-		{
-			Item.NewItem(target.getRect(), ItemID.Beenade, 20);
-			//if (Main.rand.Next(1) == 0){
-			//Item.NewItem(target.getRect(), ItemID.Beenade, 20);
-			//}
-		}
-
 		public override bool CanBurnInLava() {
 			return true;
 		}

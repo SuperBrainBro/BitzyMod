@@ -15,8 +15,8 @@ namespace Bitzy.Items.Armor
 		public override void SetDefaults() {
 			item.width = 18;
 			item.height = 18;
-			item.value = 10000;
-			item.rare = 3;
+			item.value = 200;
+			item.rare = 2;
 			item.defense = 5;
 		}
 
