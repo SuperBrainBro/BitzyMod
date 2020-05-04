@@ -17,15 +17,19 @@ namespace Bitzy
 
 	public class BitzyPlayer : ModPlayer
 	{
-		public const int maxExampleLifeFruits = 20;
-		public int exampleLifeFruits;
+		//Life Fruits
+		public const int BitzyLifeMax = 20;
+		public int BitzyLife;
 
-		public bool nonStopParty; 
+		//Pets
+		public bool GlitzyPet;
 
+		//Multiplayer Thing
+		public bool nonStopParty;
 
 		public override void ResetEffects() 
 		{		
-			player.statLifeMax2 += exampleLifeFruits * 2;
+			player.statLifeMax2 += BitzyLife * 2;
 		}
 
 		public override void clientClone(ModPlayer clientClone)
@@ -37,7 +41,7 @@ namespace Bitzy
 		{
 			ModPacket packet = mod.GetPacket();
 			packet.Write((byte)player.whoAmI);
-			packet.Write(exampleLifeFruits);
+			packet.Write(BitzyLife);
 			packet.Write(nonStopParty);
 			packet.Send(toWho, fromWho);
 		}
@@ -57,14 +61,14 @@ namespace Bitzy
 		public override TagCompound Save()
 		{	
 			return new TagCompound {
-				{"exampleLifeFruits", exampleLifeFruits},
+				{"BitzyLife", BitzyLife},
 				{"nonStopParty", nonStopParty},
 			};
 		}
 
 		public override void Load(TagCompound tag)
 		{
-			exampleLifeFruits = tag.GetInt("exampleLifeFruits");
+			BitzyLife = tag.GetInt("BitzyLife");
 			nonStopParty = tag.GetBool("nonStopParty");
 		}
 

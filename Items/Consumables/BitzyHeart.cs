@@ -20,7 +20,7 @@ namespace Bitzy.Items.Consumables
 		}
 
 		public override bool CanUseItem(Player player) {
-			return player.statLifeMax >= 100 && player.GetModPlayer<BitzyPlayer>().exampleLifeFruits < BitzyPlayer.maxExampleLifeFruits;
+			return player.statLifeMax >= 100 && player.GetModPlayer<BitzyPlayer>().BitzyLife < BitzyPlayer.BitzyLifeMax;
 		}
 
 		public override bool UseItem(Player player) {
@@ -29,7 +29,7 @@ namespace Bitzy.Items.Consumables
 			if (Main.myPlayer == player.whoAmI) {
 				player.HealEffect(2, true);
 			}
-			player.GetModPlayer<BitzyPlayer>().exampleLifeFruits += 1;
+			player.GetModPlayer<BitzyPlayer>().BitzyLife += 1;
 			return true;
 		}
 

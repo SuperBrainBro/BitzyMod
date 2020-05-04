@@ -20,6 +20,7 @@ Mod By:
 Vincent Jenei (Lite#4211)
 
 ChangeLog:
+
 v0.10:
 Added Bitzy Hearts. Bitzy Hearts are similar to life crytals. Bitzy Hearts give the player 2 health each, and up to 20 can be consumed.
 Added Bitzy Fez, a summon variant of the Bitzy Armor.
@@ -91,3 +92,5 @@ Armor now has simular stats to crimson armor, with a few benefits.
 
 v0.2:
 The first version published. Adds many of the items. Only the wings are obtainable at this point.
+
+
