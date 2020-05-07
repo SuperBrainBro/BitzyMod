@@ -22,13 +22,20 @@ namespace Bitzy
 		public int BitzyLife;
 
 		//Pets
+		public bool BurtlePet;
 		public bool GlitzyPet;
+
+		//Summons
+		public bool Ritzy;
 
 		//Multiplayer Thing
 		public bool nonStopParty;
 
 		public override void ResetEffects() 
-		{		
+		{
+			Ritzy = false;
+			BurtlePet = false;
+			GlitzyPet = false;
 			player.statLifeMax2 += BitzyLife * 2;
 		}
 

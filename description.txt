@@ -21,6 +21,11 @@ Vincent Jenei (Lite#4211)
 
 ChangeLog:
 
+v0.11:
+Added Glitzy, a light pet.
+	Can be crafted by 10 Bitzy Souls and a Blinkroot.
+Nerfed Most Bitzy Gear.
+
 v0.10:
 Added Bitzy Hearts. Bitzy Hearts are similar to life crytals. Bitzy Hearts give the player 2 health each, and up to 20 can be consumed.
 Added Bitzy Fez, a summon variant of the Bitzy Armor.

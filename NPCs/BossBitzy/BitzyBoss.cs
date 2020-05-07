@@ -46,7 +46,7 @@ namespace Bitzy.NPCs.BossBitzy
 		public override void BossLoot(ref string name, ref int potionType)
 		{
 			potionType = ItemID.LesserHealingPotion;
-			rndAmount69 = RandomNumber(25, 45);
+			rndAmount69 = RandomNumber(75, 125);
 			Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<BitzySoul>(), rndAmount69);
 		}
 

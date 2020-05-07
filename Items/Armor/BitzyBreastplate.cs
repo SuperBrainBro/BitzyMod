@@ -10,7 +10,7 @@ namespace Bitzy.Items.Armor
 	{
 		public override void SetStaticDefaults() {
 			base.SetStaticDefaults();
-			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'Bleeding']");
+			Tooltip.SetDefault($"[c/FFFFFF:+4% damage]");
 		}
 
 		public override void SetDefaults() {
@@ -22,7 +22,7 @@ namespace Bitzy.Items.Armor
 		}
 
 		public override void UpdateEquip(Player player) {
-			player.buffImmune[BuffID.Bleeding] = true;
+			player.allDamageMult += 0.04f;
 		}
 
 		public override void AddRecipes()

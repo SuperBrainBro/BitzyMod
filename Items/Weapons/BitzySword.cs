@@ -34,14 +34,14 @@ namespace Bitzy.Items.Weapons
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 35);
-			recipe.AddIngredient(ItemID.IronBar, 20);
+			recipe.AddIngredient(ItemID.IronBar, 8);
 			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 
 			recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemType<BitzySoul>(), 35);
-			recipe.AddIngredient(ItemID.LeadBar, 20);
+			recipe.AddIngredient(ItemID.LeadBar, 8);
 			recipe.AddTile(TileID.Solidifier);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

@@ -9,7 +9,7 @@ namespace Bitzy.Items.Armor
 	public class BitzyLeggings : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'Poisoned']\n[c/FFFFFF:+15% increased movement speed]");
+			Tooltip.SetDefault($"[c/FFFFFF:+10% increased movement speed]");
 		}
 
 		public override void SetDefaults() {
@@ -21,8 +21,7 @@ namespace Bitzy.Items.Armor
 		}
 
 		public override void UpdateEquip(Player player) {
-			player.buffImmune[BuffID.Poisoned] = true;
-			player.moveSpeed += 0.15f;
+			player.moveSpeed += 0.10f;
 		}
 
 		public override void AddRecipes()

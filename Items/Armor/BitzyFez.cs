@@ -10,7 +10,7 @@ namespace Bitzy.Items.Armor
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault($"[c/FFFFFF:Immunity to 'On Fire!']\n[c/FFFFFF:+1 minion slot]");
+			Tooltip.SetDefault($"[c/FFFFFF:+1 minion slot]");
 		}
 		public override void SetDefaults()
 		{
@@ -28,15 +28,14 @@ namespace Bitzy.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = $"[c/FFFFFF: +2 life regen] [c/FFFFFF:+2 minion slots]";
+			player.setBonus = $"[c/FFFFFF: +15% minion damage] [c/FFFFFF:+2 minion slots]";
 			player.maxMinions += 2;
-			player.lifeRegen += 2;
+			player.minionDamageMult += .15f;
 		}
 		
 		public override void UpdateEquip(Player player)
         {
-			player.buffImmune[BuffID.OnFire] = true;
-			player.maxMinions += 1;
+			player.maxMinions += 2;
 		}
 
 		public override void AddRecipes()
