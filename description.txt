@@ -21,6 +21,13 @@ Vincent Jenei (Lite#4211)
 
 ChangeLog:
 
+v1.0.1:
+Added a few other things.
+Im ending development of this mod, since there is nothing else I can port from my game Bitzy into Terraria.
+I am also starting development of a new mod - Elemental Hearts!
+It was fun learning how to make mods. Special thanks to direwolf420 (He such a great help on the TModLoader Discord)
+I hope you enjoyed the mod!
+
 v0.11:
 Added Glitzy, a light pet.
 	Can be crafted by 10 Bitzy Souls and a Blinkroot.
