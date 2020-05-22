@@ -21,6 +21,9 @@ Vincent Jenei (Lite#4211)
 
 ChangeLog:
 
+v1.0.1.1:
+Upgraded csproj.
+
 v1.0.1:
 Added a few other things.
 Im ending development of this mod, since there is nothing else I can port from my game Bitzy into Terraria.
